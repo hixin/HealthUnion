@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+      <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_top_bar_blue1"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="欢迎使用"
+        /> 
+   <!--  <Button
+        android:id="@+id/threebo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment"/> -->
+
+</LinearLayout>

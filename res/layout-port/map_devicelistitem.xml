@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="5px" >
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/peopname"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="张国立" />
+
+        <TextView
+            android:id="@+id/deviceid"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="100001" />
+
+        <TextView
+            android:id="@+id/createtime"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="20150427" />
+
+        <!--
+          <ImageButton
+            android:id="@+id/treate"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5px"
+            android:src="@drawable/normal"/>
+        -->
+
+
+</LinearLayout>
+<!--
+     <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_marginBottom="-60px"
+        android:background="@color/bg_color_deep"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/change"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" /> 
+                </LinearLayout>
+-->

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="请输入您的血压值"
+        android:textSize="18sp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/inputbox_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="高压" />
+
+            <EditText
+                android:id="@+id/hp_pv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@null"          
+                android:gravity="center"
+                android:inputType="number"
+                android:text="115" />
+            
+            
+            <!-- 下面这个控件只是为了让输入显示居中  -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="高压" 
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/inputbox_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="低压" />
+
+            <EditText
+                android:id="@+id/lp_pv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="75" />
+                <!-- 下面这个控件只是为了让输入显示居中  -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="高压" 
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/inputbox_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="脉搏" />
+
+            <EditText
+                android:id="@+id/et_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="60" />
+                <!-- 下面这个控件只是为了让输入显示居中  -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="高压" 
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+   </ScrollView>
+    <Button
+        android:id="@+id/input_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_common_btn"
+        android:padding="5dp"
+        android:text="确认输入"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp" />
+
+</LinearLayout>

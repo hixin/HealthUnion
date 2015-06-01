@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="action_add30">最近一个月记录</string>
+	<string name="action_add90">最近三个月记录</string>
+	<string name="action_addall">全部记录</string>
+    <string name="app_name">健康家居</string>
+    <string name="action_add">添加用户</string>
+    <string name="action_refresh">刷新</string>
+    <string name="bp_measure">"  "血压测量</string>
+    <string name="bo_measure">"  "血氧测量</string>
+    <string name="fall_monitor">"  "摔倒监控</string> 
+    <string name="functions">"  "功能菜单</string>       
+    
+    
+    <string name="title_item_detail">详情</string>
+    <string name="currentmode">"跟"</string>
+    <string name="contentdescription">"Imagebutton"</string>
+    <string name="gotoo">"路径规划"</string>
+    <string name="drive">"驾车路线"</string>
+    <string name="walk">"步行路线"</string>
+    <string name="bus">"公交路线"</string>
+    <string name="peopname">"姓名"</string>
+    <string name="modeitem1">"列表显示"</string>
+    <string name="modeitem2">"地图显示"</string>
+    <string name="xuhao">"序号"</string>
+    <string name="xingm">"姓名"</string>
+    <string name="xxdd">"详细地点"</string>
+</resources>
+

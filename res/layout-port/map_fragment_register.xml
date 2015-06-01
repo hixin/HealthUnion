@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/input"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名       "
+                        android:textColor="#000000"
+                        android:textSize="19px" />
+
+                    <EditText
+                        android:id="@+id/et_peopname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="请输入设备使用者姓名"
+                        android:textColor="@android:color/black"
+                        android:textSize="17px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/prefresh_list_cutline" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设备ID号"
+                        android:textColor="#000000"
+                        android:textSize="19px" />
+
+                    <EditText
+                        android:id="@+id/et_deviceNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="请输入设备唯一ID号"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:textSize="17px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/prefresh_list_cutline" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="摔倒卡号"
+                        android:textColor="#000000"
+                        android:textSize="19px" />
+
+                    <EditText
+                        android:id="@+id/et_mobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="请输入11位手机号码"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="17px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/prefresh_list_cutline" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textColor="#000000"
+                        android:textSize="19px" />
+
+                    <EditText
+                        android:id="@+id/old_mobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="请输入11位手机号码"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="17px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/prefresh_list_cutline" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px" >
+
+                    <TextView
+                        android:id="@+id/oldpw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置密码"
+                        android:textColor="#000000"
+                        android:textSize="19px" />
+
+                    <EditText
+                        android:id="@+id/oldpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="请输入您的设备初始密码"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:textSize="17px" />
+                </LinearLayout>
+        
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/register_button_select"
+            android:onClick="false"
+            android:paddingBottom="15px"
+            android:paddingTop="15px"
+            android:text="保存"
+            android:textColor="@android:color/black"
+            android:textSize="19px" />
+    </LinearLayout>
+
+</LinearLayout>

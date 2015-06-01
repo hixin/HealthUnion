@@ -1,0 +1,70 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>    
+    <style name="MyWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    
+     <!-- Button style -->
+    <style name="style_common_btn">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+     <!-- Actionbar style -->
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>
+         <!-- 自定义返回按钮图标 -->
+        <item name="android:homeAsUpIndicator">@drawable/arrow_left_actionbar</item>
+    </style>
+    
+    <style name="CustomActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+
+        <!-- Change action bar background color -->
+        <item name="android:background">@color/common_top_bar_blue</item>
+        <!-- Change split action bar background color -->
+        <item name="android:backgroundSplit">@color/common_top_bar_blue</item>
+        <item name="android:titleTextStyle">@style/CustomTitleTextStyle</item>
+    </style>
+
+    <style name="CustomTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+
+        <!-- Change action bar title color -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+ 
+     
+    
+   
+</resources>

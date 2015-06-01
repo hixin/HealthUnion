@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/relative11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/follow"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="100px"
+            android:layout_marginLeft="14px"
+            android:text="@string/currentmode"
+            android:textColor="@color/blue"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/showallpeople"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/contentdescription"
+                android:src="@drawable/ic_launcher" />
+
+            <ListView
+                android:id="@+id/peoples"
+                android:layout_width="400px"
+                android:layout_height="400px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="50px"
+                android:fadingEdge="none"
+                android:scrollbars="horizontal|vertical"
+                android:visibility="gone" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/daohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/gotoo"
+                android:layout_alignRight="@+id/gotoo"
+                android:layout_below="@+id/gotoo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/drive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2px"
+                    android:background="@color/bg_color"
+                    android:text="@string/drive"
+                    android:textColor="@color/blue"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:id="@+id/bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2px"
+                    android:background="@color/bg_color"
+                    android:text="@string/bus"
+                    android:textColor="@color/blue"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:id="@+id/walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2px"
+                    android:background="@color/bg_color"
+                    android:text="@string/walk"
+                    android:textColor="@color/blue"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:id="@+id/refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2px"
+                    android:background="@color/bg_color"
+                    android:text="刷新"
+                    android:textColor="@color/blue"
+                    android:textSize="25px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/gotoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:padding="5px"
+                android:text="@string/gotoo"
+                android:textColor="@color/black"
+                android:textSize="25px"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/indicate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:layout_margin="10dp"
+        android:textColor="@color/common_top_bar_blue"
+        android:text="请打开血压计..."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:layout_margin="10dp"
+         android:textColor="@color/common_top_bar_blue"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_lp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/common_top_bar_blue"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_pulse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/common_top_bar_blue"
+        android:textSize="28sp"
+        android:text="hahhh"
+        android:visibility="invisible"
+       />
+
+    <Button
+        android:id="@+id/bt_remeasure"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+	    android:textSize="20sp"
+        android:layout_margin="40dp"
+        android:padding="5dp"
+        android:background="@drawable/selector_common_btn"
+        android:layout_gravity="center_horizontal"
+        android:text="再测一次"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

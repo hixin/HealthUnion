@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2px"
+        android:background="@drawable/circularbackground" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_margin="5px"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="15px"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:padding="5px" >
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="345"
+                android:textColor="@color/blue"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="5px"
+            android:src="@drawable/icon_location" />
+
+        <ImageView
+            android:id="@+id/lastsd"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="5px"
+            android:src="@drawable/shuaidao" />
+
+        <ImageView
+            android:id="@+id/callphone"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="5px"
+            android:src="@drawable/tel" />
+    </LinearLayout>
+
+</LinearLayout>

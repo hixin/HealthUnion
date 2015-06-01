@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/list123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5px" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="    姓名" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5px"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="设备ID" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5px"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="创建时间" />
+        </LinearLayout>
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/swipeMenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/titles"
+            android:layout_margin="10px"
+            android:background="@drawable/circulardevicelist"
+            android:divider="@color/bg_color_deep"
+            android:dividerHeight="1px" >
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/changeview"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2px"
+        android:background="@drawable/circulardevicelist"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circulardevicelist"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/input"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5px"
+                        android:text="修改资料"
+                        android:textColor="@color/blue"
+                        android:textSize="19px" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5px" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  姓名      "
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/et_peopname2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入设备使用者姓名"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@drawable/prefresh_list_cutline" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备ID号"
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/et_deviceNo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入设备唯一ID号"
+                            android:inputType="number"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@drawable/prefresh_list_cutline" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="摔倒卡号"
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/et_mobileNo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入11位手机号码"
+                            android:inputType="phone"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@drawable/prefresh_list_cutline" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话"
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/old_mobileNo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入11位手机号码"
+                            android:inputType="phone"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/prefresh_list_cutline" />
+
+                    <LinearLayout
+                        android:id="@+id/resetpw_layout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px" >
+
+                        <TextView
+                            android:id="@+id/newpw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="重设密码"
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/newpassword2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入您的新密码（可缺省,8位以内）"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@drawable/prefresh_list_cutline" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px" >
+
+                        <TextView
+                            android:id="@+id/oldpw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="原始密码"
+                            android:textColor="#000000"
+                            android:textSize="15px" />
+
+                        <EditText
+                            android:id="@+id/oldpassword2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:hint="请输入您的之前密码（8位以内）"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_save2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15px"
+                android:background="@drawable/register_button_select"
+                android:gravity="center"
+                android:onClick="false"
+                android:paddingTop="15px"
+                android:text="保存"
+                android:textColor="@android:color/black"
+                android:textSize="16px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/cancelchange" />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--
+        <ExpandableListView
+        android:id="@+id/swipeMenuListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:background="@drawable/circulardevicelist"
+        android:divider="@color/bg_color_deep"
+        android:dividerHeight="1px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></ExpandableListView>-->

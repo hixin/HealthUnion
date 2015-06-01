@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:gravity="center"
+    android:background="@drawable/bg0"
+    android:orientation="horizontal" >
+  <!-- android:background="@drawable/bg" -->
+    <com.example.health.util.CircleMenuLayout
+        android:id="@+id/id_menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:background="@drawable/circle_bg3" >
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_center"
+                android:layout_width="86.0dp"
+                android:layout_height="86.0dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="@drawable/online" />
+
+            <ImageView
+                android:layout_width="116.0dp"
+                android:layout_height="116.0dp"
+                 android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:background="@drawable/turnplate_mask_unlogin_normal" />
+        </RelativeLayout>
+    </com.example.health.util.CircleMenuLayout>
+
+</LinearLayout>
+
